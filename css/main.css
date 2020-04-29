@@ -513,7 +513,6 @@ header .logo a {
 	background: none;
 	color: #1E90FF;
 	padding-left: 1rem;
-	text-transform: uppercase;
 	font-weight: bold;
 }
 @media only screen and (max-width:1024px) {
