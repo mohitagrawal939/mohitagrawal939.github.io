@@ -709,22 +709,18 @@ header .logo a {
 	margin-left: -30px
 }
 .intro-info img {
-	height: 30rem;
-	width: 30rem;
+	height: 20rem;
+	width: 20rem;
 	border-radius: 100%;
 	margin: 0rem 5 0 50;
-	float: left;
 	margin-right: 30px;
 	margin-left: 30px;
 }
 .intro-info .lead {
-	text-align: left;
-	padding-left: 15rem;
 	color: black;
 }
 .about-content {
 	position: relative;
-	text-align: left;
 	max-width: 850px;
 }
 .about-content h5 {
@@ -758,7 +754,6 @@ header .logo a {
 		width: 7.8rem;
 	}
 	.intro-info .lead {
-		padding-left: 11rem;
 	}
 	.about-content h3 {
 		text-align: center;
