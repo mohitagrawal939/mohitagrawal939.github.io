@@ -24,10 +24,9 @@ html, body {
 }
 body {
 	background: #151515;
-	font-family: "lora-regular", serif;
 	font-size: 1.7rem;
 	line-height: 3rem;
-	color: #6e6e6e;
+	color: #888888;
 }
 a, a:visited {
 	color: #000000;
