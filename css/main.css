@@ -697,7 +697,7 @@ header .logo a {
 
 /*ABOUT SECTION*/
 #about {
-	background: #FFFFFF;
+	background: url("../images/background.png") center center repeat;
 	padding-top: 2rem;
 	padding-bottom: 5rem;
 }
