@@ -937,6 +937,7 @@ header .logo a {
 	padding-bottom: 4rem;
 	color: #999;
 	position: relative;
+	background: url("../images/background.png") center center repeat;
 }
 #services .overlay {
 	position: absolute;
