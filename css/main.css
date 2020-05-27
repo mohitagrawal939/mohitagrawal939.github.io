@@ -112,9 +112,11 @@ svg #wheel {
 @keyframes scroll {
 	0% {
 		transform: translateY(0);
+		opacity: 1;
 	}
 	30% {
 		transform: translateY(100px);
+		opacity: 0;
 	}
 }
 
