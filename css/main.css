@@ -1,6 +1,7 @@
 @import url("fonts.css");
 @import url("font-awesome/css/font-awesome.min.css");
 @import url("micons/micons.css");
+@import url('https://fonts.googleapis.com/css?family=Sacramento');
 html {
 	font-size: 10px;
 }
@@ -927,6 +928,32 @@ header .logo {
 	font-family: "poppins-regular", sans-serif;
 	font-size: 1.6rem;
 	color: #FFF;
+}
+
+
+/*EMAIL SECTION*/
+#email {
+	padding-top: 4rem;
+	padding-bottom: 2rem;
+}
+#email .email-header {
+	text-align: center;
+}
+#email .email-header h5 {
+	color: #FFF;
+	font-size: 1.5rem;
+	letter-spacing: .3rem;
+}
+#email .email-content h1 {
+	text-align: center;
+	font-size:8vw;
+	/*font-size: 4.5rem;*/
+	letter-spacing: .3rem;
+	margin-bottom: 5rem;
+	font-family: 'Sacramento';
+}
+#email .email-content h2 {
+	text-align: center;
 }
 
 /*PROJECTS SECTION*/
