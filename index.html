@@ -26,8 +26,28 @@
 	  window.dataLayer = window.dataLayer || [];
 	  function gtag(){dataLayer.push(arguments);}
 	  gtag('js', new Date());
-
 	  gtag('config', 'G-G7JCG49BLP');
+	  
+	  gitDate();
+	  
+	  function gitDate(){
+		  var urlGit = 'https://api.github.com/repos/mohitagrawal939/mohitagrawal939.github.io';
+		  fetch(urlGit).then(function(response) {
+			return response.json();
+		  }).then(function(data) {
+			  var requestedData = data;
+			  var  months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+			  var date = new Date(requestedData.pushed_at);
+			  var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
+			  var monthName=months[month];
+			  var dataForm = "Last updated on : <b>"+day+" "+monthName+", "+year+"</b>";
+			  document.getElementById("UpdatedOn").innerHTML = dataForm;
+		  }).catch(function() {
+			  console.log("Booo");
+		  });
+	  }
+	  
+
 	</script>
 </head>
 <body id="mohitAgrawal">
@@ -453,6 +473,9 @@
 	        </div>
 		    <div class="copyright" style="color: #999">
 		        Crafted by Mohit Agrawal
+		    </div>
+			<div class="copyright" style="color: #999" id="UpdatedOn">
+		        
 		    </div>
 		    <div id="go-top">
 		      		<a class="smoothscroll" title="Back to Top" href="#mohitAgrawal"><img src="images/top.png" height="75" width="75"></a>
