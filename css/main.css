@@ -1107,7 +1107,7 @@ header .logo {
       -ms-transform: rotate(360deg);
           transform: rotate(360deg);
 }
-.rounded-social-buttons .fa-twitter, .fa-linkedin, .fa-github, .fa-medium {
+.rounded-social-buttons .fa-x-twitter, .fa-linkedin, .fa-github, .fa-medium {
   font-size: 25px;
 }
 .rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus,
