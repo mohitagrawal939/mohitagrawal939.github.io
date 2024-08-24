@@ -1069,6 +1069,12 @@ header .logo {
   text-align: center;
   padding-top: 20px;
 }
+#footer .git-update-on {
+	text-align: center;
+	font-style: "poppins-regular", sans-serif;
+	color: #fff; 
+	background-color: #ccc;
+}
 #footer .credits {
   text-align: center;
   font-size: 10px;
