@@ -33,7 +33,7 @@
 	  
 	  function gitDate(){
 		  var urlGit = 'https://api.github.com/repos/mohitagrawal939/mohitagrawal939.github.io';
-		  fetch(urlGit).then(function(response) {
+		  fetch(urlGit, { cache: 'no-cache' }).then(function(response) {
 			return response.json();
 		  }).then(function(data) {
 			  var requestedData = data;
