@@ -1,7 +1,6 @@
 @import url("fonts.css");
-@import url("font-awesome/css/font-awesome.min.css");
-@import url("micons/micons.css");
-@import url('https://fonts.googleapis.com/css?family=Sacramento');
+/* @import url("font-awesome/css/font-awesome.min.css"); */
+/* @import url('https://fonts.googleapis.com/css?family=Sacramento'); */
 html {
 	font-size: 10px;
 }
@@ -633,8 +632,8 @@ header .logo {
 }
 .intro-content .button::after {
 	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
+	content: "⬇";
+	font-family: "poppins-regular";
 	font-size: 1.6rem;
 	line-height: inherit;
 	text-align: center;
@@ -643,8 +642,8 @@ header .logo {
 }
 .section-intro .button::after {
 	display: inline-block;
-	content: "\f107";
-	font-family: fontAwesome;
+	content: "⬇";
+	font-family: "poppins-regular";
 	font-size: 1.6rem;
 	line-height: inherit;
 	text-align: center;
@@ -818,7 +817,7 @@ header .logo {
 	position: absolute;
 	right: 0;
 	top: -3.6rem;
-	display: block;
+	display: none;
 	font-family: "poppins-regular", sans-serif;
 	color: white;
 	font-size: 1.1rem;
@@ -946,11 +945,10 @@ header .logo {
 }
 #email .email-content h1 {
 	text-align: center;
-	font-size:8vw;
-	/*font-size: 4.5rem;*/
+	font-size: 6rem;
 	letter-spacing: .3rem;
 	margin-bottom: 5rem;
-	font-family: 'Sacramento';
+	font-family: 'poppins-regular, sans-serif';
 }
 #email .email-content h2 {
 	text-align: center;
@@ -1002,7 +1000,7 @@ header .logo {
 	color: #1E90FF;
 }
 .services-list .desc {
-	color: #999;
+	color: #000000;
 }
 .owl-pagination {
 	text-align: center;
@@ -1146,6 +1144,40 @@ footer a:hover, footer a:focus {
 		text-align: center;
 	}
 }
+
+.wave {
+	animation-name: wave-animation;
+	animation-duration: 2.5s;
+	animation-iteration-count: infinite;
+	transform-origin: 70% 70%;
+	display: inline-block;
+}
+
+@keyframes wave-animation {
+	0% { transform: rotate( 0.0deg) }
+	10% { transform: rotate(14.0deg) }
+	20% { transform: rotate(-8.0deg) }
+	30% { transform: rotate(14.0deg) }
+	40% { transform: rotate(-4.0deg) }
+	50% { transform: rotate(10.0deg) }
+	60% { transform: rotate( 0.0deg) }
+	100% { transform: rotate( 0.0deg) }
+}
+
+canvas{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+  
+#particles-js{
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+  
 
 /*GO TO TOP*/
 #go-top {

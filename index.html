@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <head>
-    	<meta charset="utf-8">
+    <meta charset="utf-8">
 	<link rel="icon" href="images/favicon.ico">
 	<title>Mohit's Blog</title>
 	<meta name="title" content="Mohit's Blog">
@@ -15,60 +15,41 @@
 	<meta property="twitter:title" content="Mohit's Blog">
 	<meta property="twitter:description" content="I am Mohit Agrawal. I craft softwares for mobile and browsers with different languages.">
 	<meta property="twitter:image" content="https://mohitagarwal.xyz/images/favicon.ico">
+	<meta property="x:card" content="summary_large_image">
+	<meta property="x:url" content="https://mohitagrawal.xyz">
+	<meta property="x:title" content="Mohit's Blog">
+	<meta property="x:description" content="I am Mohit Agrawal. I craft softwares for mobile and browsers with different languages.">
+	<meta property="x:image" content="https://mohitagarwal.xyz/images/favicon.ico">
 	<meta name="Keywords" content="software,developer,mobile,android,ios,website,engineer,freelancer,flutter,java,dart,html,css,javascript,sql,server,mysql,frontend,backend,webservices,webapp,online,auth0,typescript">
-    	<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
-   	<link rel="stylesheet" href="css/vendor.css">
-   	<link rel="stylesheet" href="css/style.css">
+   	<link rel="stylesheet" href="css/carousel.css">
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5470ZZJVC1"></script>
 	<script>	  
-	  <!-- Global site tag (gtag.js) - Google Analytics -->
-	  window.dataLayer = window.dataLayer || [];
-	  function gtag(){dataLayer.push(arguments);}
-	  gtag('js', new Date());
-	  gtag('config', 'G-5470ZZJVC1');
-	  
-	  gitDate();
-	  
-	  function gitDate(){
-		  var urlGit = 'https://api.github.com/repos/mohitagrawal939/mohitagrawal939.github.io';
-		  fetch(urlGit, { cache: 'no-cache' }).then(function(response) {
-			return response.json();
-		  }).then(function(data) {
-			  var requestedData = data;
-			  var  months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-			  var date = new Date(requestedData.pushed_at);
-			  var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
-			  var monthName=months[month];
-			  var dataForm = "Last updated on : <b>"+day+" "+monthName+", "+year+"</b>";
-			  document.getElementById("UpdatedOn").innerHTML = dataForm;
-		  }).catch(function() {
-			  console.log("Booo");
-		  });
-	  }
-	  
-	</script>
-	<style>
-		.wave {
-		  animation-name: wave-animation;
-		  animation-duration: 2.5s;
-		  animation-iteration-count: infinite;
-		  transform-origin: 70% 70%;
-		  display: inline-block;
-		}
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+		gtag('config', 'G-5470ZZJVC1');
 
-		@keyframes wave-animation {
-		   0% { transform: rotate( 0.0deg) }
-		   10% { transform: rotate(14.0deg) }
-		   20% { transform: rotate(-8.0deg) }
-		   30% { transform: rotate(14.0deg) }
-		   40% { transform: rotate(-4.0deg) }
-		   50% { transform: rotate(10.0deg) }
-		   60% { transform: rotate( 0.0deg) }
-		  100% { transform: rotate( 0.0deg) }
-		}
-	</style>
+		(function (){
+			var urlGit = 'https://api.github.com/repos/mohitagrawal939/mohitagrawal939.github.io';
+			fetch(urlGit, { cache: 'no-cache' }).then(function(response) {
+				return response.json();
+			}).then(function(data) {
+				var requestedData = data;
+				var  months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+				var date = new Date(requestedData.pushed_at);
+				var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
+				var monthName=months[month];
+				var dataForm = "<b>Last updated on : "+day+" "+monthName+", "+year+"</b>";
+				document.getElementById("UpdatedOn").innerHTML = dataForm;
+			}).catch(function() {
+				console.log("Booo");
+			});
+		})();
+	</script>
 </head>
 <body id="mohitAgrawal">
 	<!-- header -->
@@ -131,7 +112,7 @@
    				<div class="intro-info">
    					<img src="images/author.png" alt="Profile Picture" style="margin-top: 30px;">
    					<p class="lead">
-   					</br><strong>Hey there <span class="wave">👋</span></strong></br>I'm <b>Mohit Agrawal</b>, I am a Software Engineer, completed my bachelor's in information technology, currently working as a <b>Software Engineer</b> @ Capgemini India. As of now I have some projects on the <b>Web</b> and <b>Mobile</b> platform. My ambition is to make a valuable contribution towards software developer community and leave a message of <b>Perseverance</b> and <b>Tenacity</b>.</br></br><strong>| Believer | Entrepreneur Enthusiast | Self-Learner |</strong>
+   					</br><strong>Hey there <span class="wave">👋</span></strong></br>I'm <b>Mohit Agrawal</b>, I am a Software Engineer, completed my bachelor's in information technology, currently working as a <b>Software Engineer</b> @ Capgemini India. As of now I have some projects on the <b>Web</b> and <b>Mobile</b> platform. My ambition is to make a valuable contribution towards software developer community and leave a message of <b>Perseverance</b> and <b>Tenacity</b>.</br></br><strong>Believer | Entrepreneur Enthusiast | Self-Learner</strong>
 					</p>
    				</div>
    			</div>
@@ -201,23 +182,10 @@
 				<a href = "mailto:hello@mohitagrawal.xyz"><h1>hello@mohitagrawal.xyz</h1></a>
    			</div>
 			<div class="row button-section">
-				<div class="col-twelve" style="margin-top: 0px;margin-bottom: 3rem;">
+				<div class="col-twelve" style="margin-top: 0px; margin-bottom: 3rem;">
 					<a href="#contact" title="Contact" class="button stroke smoothscroll" style="border: 3px solid #FFF;color: #FFF; margin-right: 0px;">Connect with me</a>
 				</div>
 			</div>
-			<!-- <div class="row button-section">
-				<div class="col-twelve" style="margin-top: 0px;">
-					<div class="razorpay-embed-btn" data-url="https://pages.razorpay.com/pl_IeVOqz7vTOfSSI/view" data-text="Buy Me a Book 📚" data-color="#000000" data-size="large">
-					  <script>
-						(function(){
-						  var d=document; var x=!d.getElementById('razorpay-embed-btn-js')
-						  if(x){ var s=d.createElement('script'); s.defer=!0;s.id='razorpay-embed-btn-js';
-						  s.src='https://cdn.razorpay.com/static/embed_btn/bundle.js';d.body.appendChild(s);} else{var rzp=window['__rzp__'];
-						  rzp && rzp.init && rzp.init()}})();
-					  </script>
-					</div>
-				</div>
-			</div> -->
    		</div>
 	</section>
 
@@ -307,7 +275,7 @@
 		   				</div>
 		   				<div class="timeline-content">
 		   					<ul>
-							        <li>Built flutter applications for education institutes.</li>
+							    <li>Built flutter applications for education institutes.</li>
 								<li>Built widgets for existing application as necessity.</li>
 								<li>Fixed bugs in the existing application to improve performance and reduce downtime.</li>
 							</ul>
@@ -395,42 +363,42 @@
    		<div class="row services-content">
    			<div id="owl-slider" class="owl-carousel services-list">
 				<div class="service">
-			   		<span class="icon"><i class="icon-mobile"></i></span>
+			   		<span class="icon"><img src="images/mobile.png" height="65" width="65"></span>
 	            	<div class="service-content">
 		            	<h3>Dart Game Scorer</h3>
 			            <p class="desc">This project provides dart scoring feature which is totally works offline. It supports 25 players at a time.</p>
 	            	</div>
 			   	</div>
    				<div class="service">
-					<span class="icon"><i class="icon-desktop"></i></span>
+					<span class="icon"><img src="images/desktop.png" height="65" width="65"></span>
 		            <div class="service-content">
 		            	<h3>College Admission System</h3>
 			            <p class="desc">To provide an inter-connected system for the students and college admin section in which the students will be able to seek the admission in the college online.</p>
 		            </div>
 			   	</div>
    				<div class="service">
-			   		<span class="icon"><i class="icon-mobile"></i></span>
+			   		<span class="icon"><img src="images/mobile.png" height="65" width="65"></span>
 	            	<div class="service-content">
 		            	<h3>Smart Traveler</h3>
 			            <p class="desc">This project will be a virtual guide to the traveler taking the number of traveling hours as input and producing the tour plan as an output.</p>
 	            	</div>
 			   	</div>
 				<div class="service">
-					<span class="icon"><img src="images/icon.png" height="65" width="65"></span>
+					<span class="icon"><img src="images/desktop-and-mobile.png" height="65" width="65"></span>
 		            <div class="service-content">
 		            	<h3>Personal Portfolio</h3>
 			            <p class="desc">Personal portfolio created to showcase my work to the developer community and to reach out the developers using portfolio.</p>
 		            </div>
 			   	</div>
 			   	<div class="service">
-			   		<span class="icon"><i class="icon-mobile"></i></span>
+			   		<span class="icon"><img src="images/mobile.png" height="65" width="65"></span>
 		            <div class="service-content">
 		            	<h3>Password Keeper</h3>
 			            <p class="desc">This application stores ID's and passwords of the users social/personal account on local database which is 100% secure and useful.</p>
 		            </div>
 			   	</div>
 			   	<div class="service">
-					<span class="icon"><img src="images/icon.png" height="65" width="65"></span>
+					<span class="icon"><img src="images/desktop-and-mobile.png" height="65" width="65"></span>
 		            <div class="service-content">
 		            	<h3>E-commerce Portal</h3>
 			            <p class="desc">It works according to current location of user and based on current location user have various products to order. It also have pay online, delivery and shop management system.</p>

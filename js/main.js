@@ -65,7 +65,6 @@
 	var pxShow = 300;
 	var fadeInTime = 400; 
 	var fadeOutTime = 400;
-	var scrollSpeed = 300;
 	jQuery(window).scroll(function() {
 		if (!( $("#header-search").hasClass('is-visible'))) {
 			if (jQuery(window).scrollTop() >= pxShow) {
