@@ -1058,7 +1058,7 @@ header .logo {
 
 /*FOOTER*/
 #footer {
-  padding: 0 0 20px 0;
+  padding: 0px;
   color: #EEE;
   font-size: 14px;
 }

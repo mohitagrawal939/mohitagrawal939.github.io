@@ -44,8 +44,10 @@
 				var date = new Date(requestedData.pushed_at);
 				var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
 				var monthName=months[month];
-				var dataForm = "<b>Last updated on : "+day+" "+monthName+", "+year+"</b>";
-				document.getElementById("UpdatedOn").innerHTML = dataForm;
+				if(day && year && month){
+					var dataForm = "<b>Last updated on : "+day+" "+monthName+", "+year+"</b>";
+					document.getElementById("UpdatedOn").innerHTML = dataForm;
+				}
 			}).catch(function() {
 				console.log("Booo");
 			});
