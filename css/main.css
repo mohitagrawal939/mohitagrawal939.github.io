@@ -151,7 +151,7 @@ ul.disc li::before {
 	width: 8px;
 	height: 8px;
 	border-radius: 50%;
-	background: #1e90ff;
+	background: #1E90FF;
 	position: absolute;
 	left: -17px;
 	top: 11px;
@@ -194,7 +194,7 @@ form,
 	display: none;
 }
 .pace .pace-progress {
-	background: #1e90ff;
+	background: #1E90FF;
 	position: fixed;
 	z-index: 900;
 	top: 0;
@@ -230,7 +230,7 @@ form,
 	border-top: 11px solid rgba(255, 255, 255, 0.1);
 	border-right: 11px solid rgba(255, 255, 255, 0.1);
 	border-bottom: 11px solid rgba(255, 255, 255, 0.1);
-	border-left: 11px solid #1e90ff;
+	border-left: 11px solid #1E90FF;
 	-webkit-animation: load 1.1s infinite linear;
 	animation: load 1.1s infinite linear;
 	display: block;
@@ -581,7 +581,7 @@ header .logo {
 	text-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 .intro-content h5 {
-	color: #FFF;
+	color: #FFFFFF;
 	font-family: "poppins-bold";
 	font-size: 3.3rem;
 	line-height: 1.565;
@@ -607,14 +607,14 @@ header .logo {
 	text-align: center;
 	display: inline-block;
 	padding: 0 8px 0 14px;
-	color: #FFF;
+	color: #FFFFFF;
 }
 .intro-content .intro-position span:first-child::before {
 	content: "|";
 	text-align: center;
 	display: inline-block;
 	padding: 0 14px 0 8px;
-	color: #FFF;
+	color: #FFFFFF;
 }
 .intro-content .button {
 	color: #FFFFFF !important;
@@ -628,7 +628,7 @@ header .logo {
 	letter-spacing: .25rem;
 }
 .intro-content .button:hover, .intro-content .button:focus {
-	border-color: #FFF;
+	border-color: #FFFFFF;
 }
 .intro-content .button::after {
 	display: inline-block;
@@ -789,7 +789,7 @@ header .logo {
 }
 .skill-bars li {
 	height: .6rem;
-	background: #a1a1a1;
+	background: #d9d9d9;
 	width: 100%;
 	margin-bottom: 5rem;
 	padding: 0;
@@ -808,7 +808,8 @@ header .logo {
 }
 .skill-bars li .progress {
 	background: #1E90FF;
-	position: relative;opacity: .5;
+	position: relative;
+	opacity: 0.8;
 	height: 100%;
 }
 .skill-bars li .progress span {
@@ -817,10 +818,10 @@ header .logo {
 	top: -3.6rem;
 	display: none;
 	font-family: "poppins-regular";
-	color: white;
+	color: #FFFFFF;
 	font-size: 1.1rem;
 	line-height: 1;
-	background: #000;
+	background: #000000;
 	padding: .6rem .6rem;
 	border-radius: 3px;
 }
@@ -831,7 +832,7 @@ header .logo {
 	margin-left: -5px;
 	border-right: 5px solid transparent;
 	border-left: 5px solid transparent;
-	border-top: 5px solid #000;
+	border-top: 5px solid #000000;
 	content: "";
 }
 .skill-bars li .percent5   { width: 5%; }
@@ -924,7 +925,7 @@ header .logo {
 #education .timeline-header p {
 	font-family: "poppins-regular";
 	font-size: 1.6rem;
-	color: #FFF;
+	color: #FFFFFF;
 }
 
 
@@ -937,7 +938,7 @@ header .logo {
 	text-align: center;
 }
 #email .email-header h5 {
-	color: #FFF;
+	color: #FFFFFF;
 	font-size: 1.5rem;
 	letter-spacing: .3rem;
 }
@@ -956,7 +957,7 @@ header .logo {
 #projects {
 	padding-top: 4rem;
 	padding-bottom: 4rem;
-	color: #999;
+	color: #999999;
 	position: relative;
 	background: url("../images/background.png") center center repeat;
 }
@@ -966,14 +967,14 @@ header .logo {
 	left: 0;
 	width: 100%;
 	height: 100%;
-	background: #000;
+	background: #000000;
 }
 #projects .section-intro h5 {
 	color: #1E90FF;
 	margin-bottom: 3rem;
 }
 #projects .section-intro p {
-	color: #999;
+	color: #999999;
 }
 .services-content {
 	max-width: 1200px;
@@ -992,7 +993,7 @@ header .logo {
 }
 .services-list .icon i {
 	font-size: 6rem;
-	color: #000;
+	color: #000000;
 }
 .services-list h3 {
 	color: #1E90FF;
@@ -1016,7 +1017,7 @@ header .logo {
 	margin: 1.2rem .8rem 0 .8rem;
 	border-radius: 50%;
 	display: inline-block;
-	background: #999;
+	background: #999999;
 }
 .owl-theme .owl-controls .owl-page.active span {
 	background: #1E90FF;
@@ -1029,7 +1030,7 @@ header .logo {
 	background: #151515;
 }
 #contact .section-intro h1 {
-	color: white;
+	color: #FFFFFF;
 }
 #contact .section-intro h5 {
 	color: #1E90FF;
@@ -1059,7 +1060,7 @@ header .logo {
 /*FOOTER*/
 #footer {
   padding: 0px;
-  color: #EEE;
+  color: #EEEEEE;
   font-size: 14px;
 }
 #footer .copyright {
@@ -1069,8 +1070,8 @@ header .logo {
 #footer .git-update-on {
 	text-align: center;
 	font-style: "poppins-regular";
-	color: #fff; 
-	background-color: #ccc;
+	color: #FFFFFF; 
+	background-color: #CCCCCC;
 }
 #footer .credits {
   text-align: center;
@@ -1078,7 +1079,7 @@ header .logo {
   color: #f1f7ff;
 }
 #footer .credits a {
-  color: #1e90ff;
+  color: #1E90FF;
 }
 #footer .credits a:hover {
   color: #f1f7ff;
@@ -1096,7 +1097,7 @@ header .logo {
   padding: 10px 10px 10px 10px;
   text-decoration: none;
   text-align: center;
-  color: #fefefe;
+  color: #FEFEFE;
   font-size: 1.5625rem;
   font-weight: normal;
   line-height: 2em;
@@ -1118,7 +1119,7 @@ header .logo {
 .rounded-social-buttons .social-button.medium:hover, .rounded-social-buttons .social-button.medium:focus,
 .rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
   color: #1E90FF;
-  background: #fefefe;
+  background: #FEFEFE;
   border-color: #1E90FF;
 }
 .rounded-social-buttons .social-button.github,
@@ -1136,7 +1137,7 @@ footer a, footer a:visited {
 	color: #1E90FF;
 }
 footer a:hover, footer a:focus {
-	color: #FFF;
+	color: #FFFFFF;
 }
 @media only screen and (max-width:768px) {
 	footer {
@@ -1202,7 +1203,7 @@ canvas{
     width: 10px;
 }
 ::-webkit-scrollbar-track {
-    background-color: #6d6d6d;
+    background-color: #6D6D6D;
 }
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 5px;
