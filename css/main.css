@@ -890,8 +890,7 @@ header .logo {
 
 /*EDUCATION*/
 #education {
-	padding-top: 4rem;
-	padding-bottom: 2rem;
+	padding: 4rem 0rem;
 }
 #education .education-header {
 	text-align: center;
@@ -1050,7 +1049,7 @@ header .logo {
 	margin-bottom: 2.1rem;
 }
 .contact-info .icon i {
-	font-size: 4.2rem;
+	font-size: 3rem;
 	color: #FFFFFF;
 }
 .contact-info h5 {
@@ -1134,10 +1133,10 @@ footer {
 	font-family: "poppins-regular";
 }
 footer a, footer a:visited {
-	color: #1E90FF;
+	color: #FFFFFF;
 }
 footer a:hover, footer a:focus {
-	color: #FFFFFF;
+	color: #1E90FF;
 }
 @media only screen and (max-width:768px) {
 	footer {
@@ -1210,3 +1209,36 @@ canvas{
     border-radius: 2px;
     background: #1E90FF; 
 }
+
+
+.white-blue-button {
+	border: 3px solid #1E90FF;
+	color: #1E90FF !important;
+	transition: .40s;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .40s;
+	padding: 11px 40px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	font-family: "poppins-bold";
+    font-size: 1.4rem;
+	-webkit-transition: .40s;
+ }
+ 
+.white-blue-button:hover {
+	background: #1E90FF;
+	color: #FFFFFF !important;
+	transition: .40s;
+	text-decoration: none;
+	text-transform: uppercase;
+	transition: .40s;
+	padding: 11px 35px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: .3rem;
+	font-family: "poppins-bold";
+    font-size: 1.4rem;
+	-webkit-transition: .40s;
+ }

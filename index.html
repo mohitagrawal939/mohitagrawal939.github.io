@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
    	<link rel="stylesheet" href="css/carousel.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-5470ZZJVC1"></script>
 	<script>	  
 		<!-- Global site tag (gtag.js) - Google Analytics -->
@@ -67,6 +68,7 @@
 					<li><a class="smoothscroll"  href="#about" title="">About Me</a></li>
 					<li><a class="smoothscroll"  href="#skills" title="">Skills</a></li>
 					<li><a class="smoothscroll"  href="#" title="">Blog (Coming soon)</a></li>
+					<li><a class="smoothscroll"  href="#" title="">Shelf (Coming soon)</a></li>
 					<li><a class="smoothscroll"  href="#experience" title="">Experience</a></li>
 					<li><a class="smoothscroll"  href="#education" title="">Education</a></li>
 					<li><a class="smoothscroll"  href="#projects" title="">Projects</a></li>
@@ -119,9 +121,22 @@
 					</p>
    				</div>
    			</div>
-			<a class="button stroke smoothscroll" href="#skills">Skills</a>
+			<!-- <a class="button stroke smoothscroll" href="#skills">Skills</a> -->
    		</div>
 	</section>
+
+	<!-- email section -->
+	 <!-- TODO: click to copy button addtion beside mail text<a><i class="fa-solid fa-copy"></i></a> -->
+	<section id="email" style="background-color: #1E90FF;">
+		<div class="row email-timeline">
+			<div class="col-twelve email-header">
+				<h5>Let's connect and forge the future together 👨‍💻</h5>
+			</div>
+			<div class="col-twelve email-content">
+				<a href="mailto:hello@mohitagrawal.xyz"><h1>hello@mohitagrawal.xyz</h1></a>
+			</div>
+		</div>
+ 	</section>
 
 	<!-- skills section -->
 	<section id="skills">
@@ -170,27 +185,13 @@
    		</div>
 	   	<div class="row button-section">
 	   		<div class="col-twelve" style="margin-top: 0px;margin-bottom: 3rem;">
-				<a href="Resume.pdf" download title="Download CV" class="button stroke" style="border: 3px solid #1E90FF;color: #1E90FF;  margin-right: 0px;">Download CV</a>
+				<!-- <a href="Resume.pdf" download title="Download CV" class="button stroke" style="border: 3px solid #1E90FF;color: #1E90FF;  margin-right: 0px;">Download CV</a> -->
+				<a class="white-blue-button" href="Resume.pdf" download title="Download CV" aria-label="Check Mohit Agrawal's linkedin profile">
+					Download CV <i class="fa-solid fa-download"></i>
+				</a>
 	   		</div>
 	   	</div>
    	</section>
-	
-	<!-- email section -->
-	<section id="email" style="background-color: #1E90FF;">
-   		<div class="row email-timeline">
-	   		<div class="col-twelve email-header">
-	   			<h5>Let's connect and forge the future together 👨‍💻</h5>
-	   		</div>
-   			<div class="col-twelve email-content">
-				<a href = "mailto:hello@mohitagrawal.xyz"><h1>hello@mohitagrawal.xyz</h1></a>
-   			</div>
-			<div class="row button-section">
-				<div class="col-twelve" style="margin-top: 0px; margin-bottom: 3rem;">
-					<a href="#contact" title="Contact" class="button stroke smoothscroll" style="border: 3px solid #FFF;color: #FFF; margin-right: 0px;">Connect with me</a>
-				</div>
-			</div>
-   		</div>
-	</section>
 
 
    <!-- experience section -->
@@ -301,11 +302,6 @@
    				</div>
    			</div>
    		</div>
-		<div class="row button-section">
-			<div class="col-twelve" style="text-align: center;margin-top: 3rem">
-				<a class="button stroke smoothscroll" href="#projects" style="align-items:center;margin-right: 0px;">View my projects</a>
-			</div>
-		</div>
 	</section>
 
     <!-- education section-->
@@ -349,11 +345,15 @@
    			</div>
    			<div class="row button-section">
 				<div class="col-twelve" style="text-align: center;margin-top: 3rem">
-					<a class="button stroke" href="https://www.linkedin.com/in/mohitagrawal939" aria-label="Check Mohit Agrawal's linkedin profile" target="_blank" style="align-items:center;border: 3px solid #1E90FF;color: #1E90FF;margin-right: 0px;">View on linkedin</a>
+					<a class="white-blue-button" href="https://www.linkedin.com/in/mohitagrawal939" aria-label="Check Mohit Agrawal's linkedin profile" target="_blank" >
+						View on linkedin <i class="fa-solid fa-arrow-up-right-from-square"></i>
+					</a>
 				</div>
 			</div>
    		</div>
 	</section>
+
+	<!-- TODO:Book shelf and blog section -->
 
 	<!-- Projects section -->
 	<section id="projects" style="background-color: #fff">
@@ -409,8 +409,10 @@
 			   	</div>
    			</div>
 			<div class="row button-section">
-				<div class="col-twelve" style="text-align: center;margin-top: 3rem">
-					<a class="button stroke" href="https://www.github.com/mohitagrawal939/" aria-label="Check Mohit Agrawal's github profile" target="_blank" style="align-items:center;border: 3px solid #1E90FF;color: #1E90FF;margin-right: 0px;">View on github</a>
+				<div class="col-twelve" style="text-align: center; margin-top: 3rem">
+					<a class="white-blue-button" href="https://www.github.com/mohitagrawal939/" aria-label="Check Mohit Agrawal's github profile" target="_blank">
+						View on github <i class="fa-solid fa-arrow-up-right-from-square"></i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -428,21 +430,21 @@
 	   	<div class="row contact-info" style="margin-top: 3rem">
 	   		<div class="col-four tab-full">
 	   			<div class="icon">
-					<img src="images/location.png" alt="location icon" height="40" width="40">
+					<i class="fa-solid fa-location-dot"></i>
 	   			</div>
 	   			<h5>WHERE TO FIND ME</h5>
 	   			<p><a href="https://goo.gl/maps/BcspgV5xqzoc2P9q8" aria-label="Check Mohit Agrawal's location" style="color: #FFF">Pune, Maharashtra, India</a></p>
 	   		</div>
 	   		<div class="col-four tab-full collapse">
 	   			<div class="icon">
-	   				<img src="images/email.png" alt="email icon" height="40" width="40">
+					<i class="fa-solid fa-envelopes-bulk"></i>
 	   			</div>
 	   			<h5>EMAIL ME AT</h5>
 	   			<p><a href="mailto:hello@mohitagrawal.xyz" style="color: #FFF">hello@mohitagrawal.xyz</a></p>
 	   		</div>
 	   		<div class="col-four tab-full">
 	   			<div class="icon">
-					<img src="images/contact.png" alt="contact icon" height="40" width="40">
+					<i class="fa-solid fa-phone-volume"></i>
 	   			</div>
 	   			<h5>CALL ME AT</h5>
 	   			<p><a href="tel:+917774967429" style="color: #FFF">+91-777-496-7429</a></p>
@@ -454,19 +456,20 @@
 	<footer id="footer" style="background: #000">
 	    <div class="container">
 	    	<div class="copyright" style="font-size: 25px; font-style: italic;">Stalk Me...</div>
-	    	<div class="copyright rounded-social-buttons" style="font-family: monospace;">
+	    	<div class="copyright rounded-social-buttons">
 		        <a href="https://www.twitter.com/@mohitagrawal939" aria-label="Check Mohit Agrawal's twitter profile" target="_blank">
-		        	<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#fafcff}</style><path d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zm297.1 84L257.3 234.6 379.4 396H283.8L209 298.1 123.3 396H75.8l111-126.9L69.7 116h98l67.7 89.5L313.6 116h47.5zM323.3 367.6L153.4 142.9H125.1L296.9 367.6h26.3z"/></svg>
+		        	<i class="fa-brands fa-square-x-twitter" style="font-size: 3rem; text-decoration: none;"></i>
 				</a>
 				<a href="https://www.github.com/mohitagrawal939/" aria-label="Check Mohit Agrawal's github profile" target="_blank">
-		        	<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#f7f7f7}</style><path d="M400 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM277.3 415.7c-8.4 1.5-11.5-3.7-11.5-8 0-5.4.2-33 .2-55.3 0-15.6-5.2-25.5-11.3-30.7 37-4.1 76-9.2 76-73.1 0-18.2-6.5-27.3-17.1-39 1.7-4.3 7.4-22-1.7-45-13.9-4.3-45.7 17.9-45.7 17.9-13.2-3.7-27.5-5.6-41.6-5.6-14.1 0-28.4 1.9-41.6 5.6 0 0-31.8-22.2-45.7-17.9-9.1 22.9-3.5 40.6-1.7 45-10.6 11.7-15.6 20.8-15.6 39 0 63.6 37.3 69 74.3 73.1-4.8 4.3-9.1 11.7-10.6 22.3-9.5 4.3-33.8 11.7-48.3-13.9-9.1-15.8-25.5-17.1-25.5-17.1-16.2-.2-1.1 10.2-1.1 10.2 10.8 5 18.4 24.2 18.4 24.2 9.7 29.7 56.1 19.7 56.1 19.7 0 13.9.2 36.5.2 40.6 0 4.3-3 9.5-11.5 8-66-22.1-112.2-84.9-112.2-158.3 0-91.8 70.2-161.5 162-161.5S388 165.6 388 257.4c.1 73.4-44.7 136.3-110.7 158.3zm-98.1-61.1c-1.9.4-3.7-.4-3.9-1.7-.2-1.5 1.1-2.8 3-3.2 1.9-.2 3.7.6 3.9 1.9.3 1.3-1 2.6-3 3zm-9.5-.9c0 1.3-1.5 2.4-3.5 2.4-2.2.2-3.7-.9-3.7-2.4 0-1.3 1.5-2.4 3.5-2.4 1.9-.2 3.7.9 3.7 2.4zm-13.7-1.1c-.4 1.3-2.4 1.9-4.1 1.3-1.9-.4-3.2-1.9-2.8-3.2.4-1.3 2.4-1.9 4.1-1.5 2 .6 3.3 2.1 2.8 3.4zm-12.3-5.4c-.9 1.1-2.8.9-4.3-.6-1.5-1.3-1.9-3.2-.9-4.1.9-1.1 2.8-.9 4.3.6 1.3 1.3 1.8 3.3.9 4.1zm-9.1-9.1c-.9.6-2.6 0-3.7-1.5s-1.1-3.2 0-3.9c1.1-.9 2.8-.2 3.7 1.3 1.1 1.5 1.1 3.3 0 4.1zm-6.5-9.7c-.9.9-2.4.4-3.5-.6-1.1-1.3-1.3-2.8-.4-3.5.9-.9 2.4-.4 3.5.6 1.1 1.3 1.3 2.8.4 3.5zm-6.7-7.4c-.4.9-1.7 1.1-2.8.4-1.3-.6-1.9-1.7-1.5-2.6.4-.6 1.5-.9 2.8-.4 1.3.7 1.9 1.8 1.5 2.6z"/></svg>
+		        	<i class="fa-brands fa-square-github" style="font-size: 3rem;"></i>
 		        </a>
 		        <a href="https://www.linkedin.com/in/mohitagrawal939" aria-label="Check Mohit Agrawal's linkedin profile" target="_blank">
-		        	<svg xmlns="http://www.w3.org/2000/svg" height="2em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><style>svg{fill:#ffffff}</style><path d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"/></svg>
+		        	<i class="fa-brands fa-linkedin" style="font-size: 3rem;"></i>
 		        </a>
 	        </div>
+			<!-- TODO:make this heart pulse -->
 		    <div class="copyright" style="color: #999">
-		        Crafted by Mohit Agrawal
+		        Crafted <i class="fa-solid fa-heart" style="color: red;"></i> Mohit Agrawal
 		    </div>
 			<div class="git-update-on" id="UpdatedOn"></div>
 		    <div id="go-top">
@@ -487,7 +490,5 @@
    <script src="js/main.js"></script>
    <script src="js/particles.js"></script>
    <script src="js/app.js"></script>
-   <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-
 </body>
 </html>
