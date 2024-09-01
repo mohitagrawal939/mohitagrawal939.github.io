@@ -483,6 +483,7 @@ header .logo {
 	width: 100%;
 	height: auto;
 	clear: both;
+	display: none;
 }
 .main-navigation > li {
 	display: block;
