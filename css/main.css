@@ -1208,6 +1208,20 @@ canvas{
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
 }
+#go-top a, a:visited, a:hover, a:active {
+	color: inherit;
+  }
+#go-top i {
+	color: #1E90FF;
+	font-size: 4rem;
+	animation: MoveUpDown 1s infinite alternate;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FFFFFF;
+}
+@keyframes MoveUpDown{
+	0% { transform: translateY(0); }
+    100% { transform: translateY(-9px); }
+}
 
 /* SCROLLBAR */
 ::-webkit-scrollbar {
