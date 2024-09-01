@@ -1066,6 +1066,18 @@ header .logo {
   text-align: center;
   padding-top: 20px;
 }
+#footer .crafted-by {
+	text-align: center;
+	padding-top: 20px;
+	color: #999999;
+}
+#footer .crafted-by i {
+	color: #FF0000;
+	animation: beat .25s infinite alternate;
+}
+@keyframes beat{
+	to { transform: scale(0.9); }
+}
 #footer .git-update-on {
 	text-align: center;
 	font-style: "poppins-regular";
