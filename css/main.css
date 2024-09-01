@@ -1,6 +1,4 @@
 @import url("fonts.css");
-/* @import url("font-awesome/css/font-awesome.min.css"); */
-/* @import url('https://fonts.googleapis.com/css?family=Sacramento'); */
 html {
 	font-size: 10px;
 }
@@ -322,7 +320,7 @@ button::-moz-focus-inner, input::-moz-focus-inner {
 	position: relative;
 }
 .section-intro h1 {
-	font-family: "poppins-semibold", serif;
+	font-family: "poppins-semibold";
 	font-size: 3.6rem;
 	color: #313131;
 	line-height: 1.25;
@@ -1058,17 +1056,22 @@ header .logo {
 
 /*FOOTER*/
 #footer {
-  padding: 0px;
-  color: #EEEEEE;
-  font-size: 14px;
+	font-size: 1.2rem;
+	font-family: "poppins-regular";
+	background: #000000;
+	color: #FFFFFF;
 }
-#footer .copyright {
-  text-align: center;
-  padding-top: 20px;
+#footer .heading {
+	text-align: center;
+	padding: 20px 0px;
+	font-size: 26px;
+	font-style: italic;
+	color: #FFFFFF;
 }
 #footer .crafted-by {
 	text-align: center;
-	padding-top: 20px;
+	padding: 10px 0px;
+	font-size: 14px;
 	color: #999999;
 }
 #footer .crafted-by i {
@@ -1084,76 +1087,23 @@ header .logo {
 	color: #FFFFFF; 
 	background-color: #CCCCCC;
 }
-#footer .credits {
-  text-align: center;
-  font-size: 10px;
-  color: #f1f7ff;
+#footer .social-buttons {
+	text-align: center;
 }
-#footer .credits a {
-  color: #1E90FF;
+#footer .social-buttons a {
+	color: #FFF;
+	display: inline;
+	cursor: pointer;
 }
-#footer .credits a:hover {
-  color: #f1f7ff;
-}
-.rounded-social-buttons {
-  text-align: center;
-}
-.rounded-social-buttons .social-button {
-  display: inline-block;
-  position: relative;
-  cursor: pointer;
-  width: 3.125rem;
-  height: 3.125rem;
-  border: 0.125rem solid transparent;
-  padding: 10px 10px 10px 10px;
-  text-decoration: none;
-  text-align: center;
-  color: #FEFEFE;
-  font-size: 1.5625rem;
-  font-weight: normal;
-  line-height: 2em;
-  border-radius: 1.6875rem;
-  transition: all 0.5s ease;
-  margin-right: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-.rounded-social-buttons .social-button:hover, .rounded-social-buttons .social-button:focus {
-  -webkit-transform: rotate(360deg);
-      -ms-transform: rotate(360deg);
-          transform: rotate(360deg);
-}
-.rounded-social-buttons .fa-x-twitter, .fa-linkedin, .fa-github, .fa-medium {
-  font-size: 25px;
-}
-.rounded-social-buttons .social-button.linkedin:hover, .rounded-social-buttons .social-button.linkedin:focus,
-.rounded-social-buttons .social-button.github:hover, .rounded-social-buttons .social-button.github:focus,
-.rounded-social-buttons .social-button.medium:hover, .rounded-social-buttons .social-button.medium:focus,
-.rounded-social-buttons .social-button.twitter:hover, .rounded-social-buttons .social-button.twitter:focus {
-  color: #1E90FF;
-  background: #FEFEFE;
-  border-color: #1E90FF;
-}
-.rounded-social-buttons .social-button.github,
-.rounded-social-buttons .social-button.linkedin,
-.rounded-social-buttons .social-button.medium,
-.rounded-social-buttons .social-button.twitter {
-  background: #1E90FF;
-}
-footer {
-	padding-bottom: 2rem;
-	font-size: 1.2rem;
-	font-family: "poppins-regular";
-}
-footer a, footer a:visited {
-	color: #FFFFFF;
-}
-footer a:hover, footer a:focus {
+#footer .social-buttons a:hover, .social-buttons a:focus {
 	color: #1E90FF;
+	-webkit-text-stroke-width: 1px;
+	-webkit-text-stroke-color: #FFFFFF;
 }
-@media only screen and (max-width:768px) {
-	footer {
-		text-align: center;
-	}
+#footer .social-buttons a, .social-buttons a:visited {
+	color: #FFFFFF;
+	-webkit-text-stroke-width: inherit;
+	-webkit-text-stroke-color: inherit;
 }
 
 .wave {
@@ -1163,7 +1113,6 @@ footer a:hover, footer a:focus {
 	transform-origin: 70% 70%;
 	display: inline-block;
 }
-
 @keyframes wave-animation {
 	0% { transform: rotate( 0.0deg) }
 	10% { transform: rotate(14.0deg) }
@@ -1180,7 +1129,6 @@ canvas{
 	height: 100%;
 	display: block;
 }
-  
 #particles-js{
 	width: 100%;
 	height: 100%;
@@ -1252,7 +1200,6 @@ canvas{
     font-size: 1.4rem;
 	-webkit-transition: .40s;
  }
- 
 .white-blue-button:hover {
 	background: #1E90FF;
 	color: #FFFFFF !important;
@@ -1267,4 +1214,4 @@ canvas{
 	font-family: "poppins-bold";
     font-size: 1.4rem;
 	-webkit-transition: .40s;
- }
+}
