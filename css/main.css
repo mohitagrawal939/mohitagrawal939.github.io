@@ -1207,6 +1207,6 @@ canvas{
 }
 ::-webkit-scrollbar-thumb {
     -webkit-border-radius: 5px;
-    border-radius: 5px;
+    border-radius: 2px;
     background: #1E90FF; 
 }
