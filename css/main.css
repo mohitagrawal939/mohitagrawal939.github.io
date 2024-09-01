@@ -478,12 +478,11 @@ header .logo {
 }
 .main-navigation {
 	background: #000000;
-	padding: 24px 30px 42px;
+	padding: 24px 30px;
 	margin: 0;
 	width: 100%;
 	height: auto;
 	clear: both;
-	display: none;
 }
 .main-navigation > li {
 	display: block;
@@ -694,11 +693,8 @@ header .logo {
 /*ABOUT SECTION*/
 #about {
 	background: url("../images/background.png") center center repeat;
+	padding-bottom: 2rem;
 	padding-top: 2rem;
-	padding-bottom: 5rem;
-}
-#about .section-intro {
-	margin-bottom: 3rem;
 }
 .intro-info {
 	margin-right: -30px;
@@ -708,7 +704,6 @@ header .logo {
 	height: 20rem;
 	width: 20rem;
 	border-radius: 100%;
-	margin: 0rem 5 0 50;
 	margin-right: 30px;
 	margin-left: 30px;
 }
@@ -731,6 +726,7 @@ header .logo {
 }
 .button-section {
 	text-align: center;
+	padding-bottom: 2rem;
 }
 .button-section .button {
 	width: 250px;
