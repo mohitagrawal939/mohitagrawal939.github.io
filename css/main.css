@@ -1164,6 +1164,7 @@ header .logo {
 }
 #footer .social-buttons {
     text-align: center;
+    padding-bottom: 15px;
 }
 #footer .social-buttons a {
     color: #fff;
