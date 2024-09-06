@@ -24,10 +24,10 @@
 	<meta property="x:description" content="I am Mohit Agrawal. I craft softwares for mobile and browsers with different languages.">
 	<meta property="x:image" content="https://github.com/user-attachments/assets/bc954443-677d-41cd-b6dd-2b224ec04d65">
 	<meta name="apple-mobile-web-app-title" content="mohitagrawal.xyz">
-	<link rel="apple-touch-icon" href="images/favicon.ico">
 	<meta name="robots" content="max-snippet:-1, max-image-preview:large, max-video-preview:-1">
 	<meta name="Keywords" content="software,developer,mobile,android,ios,website,engineer,freelancer,flutter,java,dart,html,css,javascript,sql,server,mysql,frontend,backend,webservices,webapp,online,auth0,typescript,react,ui,api,experienced,mongodb,jenkins,openpass,cdn,cicd,build,deploy">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+	<link rel="apple-touch-icon" href="images/favicon.ico">
 	<link rel="stylesheet" href="css/base.css">
 	<link rel="stylesheet" href="css/main.css">
    	<link rel="stylesheet" href="css/carousel.css">
@@ -51,8 +51,8 @@
 				var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
 				var monthName=months[month];
 				if(day && year && month){
-					var dataForm = "<b>Last updated on : "+day+" "+monthName+", "+year+"</b>";
-					document.getElementById("UpdatedOn").innerHTML = dataForm;
+					var dataForm = `Last updated on : ${day} ${monthName}, ${year}`;
+					document.getElementById("updated-on").innerHTML = dataForm;
 				}
 			}).catch(function() {
 				console.log("Booo");
@@ -470,10 +470,12 @@
 		        	<i class="fa-brands fa-linkedin" style="font-size: 3rem;"></i>
 		        </a>
 	        </div>
-		    <div class="crafted-by">
-		        Crafted <i class="fa-solid fa-heart"></i> Mohit
-		    </div>
-			<div class="git-update-on" id="UpdatedOn"></div>
+			<div class="git-update-on">
+                <div class="crafted-by" style="float: left;">
+                    <i class="fa-solid fa-copyright"></i> 2024 Mohit <i class="fa-solid fa-heart"></i>
+                </div>
+                <div id="updated-on" style="float: right;"></div>
+            </div>
 		    <div id="go-top">
 		      	<a class="smoothscroll" title="Back to Top" href="#mohitAgrawal"><i class="fa-solid fa-cloud-arrow-up"></i></a>
 		    </div>
