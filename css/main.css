@@ -1149,7 +1149,7 @@ header .logo {
     font-style: italic;
     color: #ffffff;
 }
-#footer .crafted-by .fa-heart {
+#footer .copyright .fa-heart {
     color: #ff0000;
     animation: beat 0.25s infinite alternate;
 }
@@ -1158,9 +1158,11 @@ header .logo {
         transform: scale(0.9);
     }
 }
-#footer .git-update-on {
+#footer .bottom-container {
     color: #fff;
-    padding: 0px 10px;
+    line-height: 2rem;
+    background-color: #2b2b2b;
+    padding: 5px 10px;
 }
 #footer .social-buttons {
     text-align: center;
