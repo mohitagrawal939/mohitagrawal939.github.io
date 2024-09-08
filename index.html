@@ -58,6 +58,35 @@
 				console.log("Booo");
 			});
 		})();
+       
+        setTimeout(() => {
+            console.log(
+                "%cOk, Seems you play with console and try to break website? 💻\n" +
+                "No ???? Ok, I trust you. 🤝\n" +
+                "Want to see some magic on your fingertips?\n" +
+                "✨%cJust type my first name and hit enter!",
+                "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px;",
+                "color: #00FF00; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px;"
+            );
+        }, 3000);
+        ["mohit", "Mohit", "MOHIT"].forEach((name) => {
+            if (Object.hasOwn(window, name)) return;
+            Object.defineProperty(window, name, {
+                get() {
+                    console.log(
+                        "%cJust watch out the screen carefully...magic will popout",
+                        "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px"
+                    );
+                    setTimeout(() => {
+                        console.log(
+                        "%cWell, I am sorry.....It was prank 😂😂😂",
+                        "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px"
+                    );
+                    }, 5000);
+                    return '';
+                },
+            });
+        });
 	</script>
 </head>
 <body id="mohitAgrawal">
