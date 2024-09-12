@@ -597,15 +597,6 @@ header .logo {
     position: absolute;
     top: 27%;
 }
-.intro-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #111111;
-    opacity: 0.85;
-}
 .intro-content {
     display: block;
     vertical-align: middle;
@@ -746,7 +737,7 @@ header .logo {
 
 /*ABOUT SECTION*/
 #about {
-    background: url("../images/background.png") center center repeat;
+    background: url("../assets/background.png") center center repeat;
     padding-bottom: 2rem;
     padding-top: 2rem;
 }
@@ -764,19 +755,17 @@ header .logo {
 .intro-info .lead {
     color: black;
 }
-.about-content {
+.language-proficiency-content {
     position: relative;
     max-width: 850px;
 }
-.about-content h5 {
-    font-family: "Fira Code", sans-serif;
-    font-weight: 700;
-    font-size: 2.8rem;
-    text-transform: uppercase;
-    letter-spacing: 0.25rem;
+.language-proficiency-content h5 {
+    font-size: 1.5rem;
+    letter-spacing: 0.3rem;
     color: #1e90ff;
+    text-align: center;
 }
-.about-content .skill-bars {
+.language-proficiency-content .skill-bars {
     margin-top: 10rem;
 }
 .button-section {
@@ -800,10 +789,10 @@ header .logo {
         height: 7.8rem;
         width: 7.8rem;
     }
-    .about-content h3 {
+    .language-proficiency-content h3 {
         text-align: center;
     }
-    .about-content .about-content .skill-bars {
+    .language-proficiency-content .language-proficiency-content .skill-bars {
         margin-bottom: 4.2rem;
     }
     .button-section .button {
@@ -948,16 +937,9 @@ header .logo {
 
 /*EXPERIENCE*/
 #experience {
+    background-color: #fff;
     padding-top: 4rem;
     padding-bottom: 2rem;
-}
-#experience .experience-header {
-    text-align: center;
-}
-#experience .experience-header h5 {
-    color: #1e90ff;
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
 }
 #experience .experience-timeline {
     max-width: 980px;
@@ -972,7 +954,7 @@ header .logo {
     color: #1e90ff;
 }
 #experience .timeline-header p {
-    margin-bottom: 1rem;
+    margin-bottom: 0rem;
     font-family: "Fira Code", sans-serif;
     font-size: 1.6rem;
     color: #888888;
@@ -981,14 +963,6 @@ header .logo {
 /*EDUCATION*/
 #education {
     padding: 4rem 0rem;
-}
-#education .education-header {
-    text-align: center;
-}
-#education .education-header h5 {
-    color: #1e90ff;
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
 }
 #education .education-timeline {
     max-width: 980px;
@@ -1046,15 +1020,7 @@ header .logo {
     padding-bottom: 4rem;
     color: #999999;
     position: relative;
-    background: url("../images/background.png") center center repeat;
-}
-#services .overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: #000000;
+    background: url("../assets/background.png") center center repeat;
 }
 #projects .section-intro h5 {
     color: #1e90ff;
@@ -1129,6 +1095,7 @@ header .logo {
     font-family: "Fira Code", sans-serif;
     font-size: 1.5rem;
     text-align: center;
+    margin-top: 3rem;
 }
 .contact-info .collapse {
     padding: 0;
@@ -1142,6 +1109,9 @@ header .logo {
 }
 .contact-info h5 {
     color: #1e90ff;
+}
+.contact-info a {
+    color: #fff;
 }
 
 /*FOOTER*/
@@ -1295,6 +1265,9 @@ a:active {
     background: #1e90ff;
 }
 
+.white-blue-button-div {
+    margin: 3rem 0;
+}
 .white-blue-button {
     border: 3px solid #1e90ff;
     color: #1e90ff !important;
@@ -1346,4 +1319,15 @@ a:active {
 
 body.cl-prank-open {
     overflow: hidden;
+}
+
+.pipe {
+    font-size: 40px;
+    color: #1e90ff;
+    padding-left: 3px;
+}
+
+.icon-style {
+    color: #1e90ff;
+    font-size: 3rem;
 }
