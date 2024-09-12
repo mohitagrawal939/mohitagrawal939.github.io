@@ -61,12 +61,10 @@
        
         setTimeout(() => {
             console.log(
-                "%cOk, Seems you play with console and try to break website? 💻\n" +
-                "No ???? Ok, I trust you. 🤝\n" +
+                "%cWelcome to Mohit's magic house 💻\n" +
                 "Want to see some magic on your fingertips?\n" +
-                "✨%cJust type my first name and hit enter!",
-                "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px;",
-                "color: #00FF00; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px;"
+                "Just type my first name and hit enter!",
+                "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px;"
             );
         }, 3000);
         ["mohit", "Mohit", "MOHIT"].forEach((name) => {
@@ -74,17 +72,32 @@
             Object.defineProperty(window, name, {
                 get() {
                     console.log(
-                        "%cJust watch out the screen carefully...magic will popout",
+                        "%cGive me a sec....I am almost ready to show you the magic...",
                         "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px"
                     );
                     setTimeout(() => {
+                        document.getElementById('prank').classList.add('open');
+                        document.body.classList.add('cl-prank-open');
                         console.log(
-                        "%cWell, I am sorry.....It was prank 😂😂😂",
-                        "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px"
-                    );
-                    }, 5000);
+                            "%cWell, I am sorry.....It's a prank 😂😂😂",
+                            "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px"
+                        );
+                    }, 3000);
                     return '';
                 },
+            });
+        });
+
+        function closeGif() {
+            document.querySelector('.cl-prank.open').classList.remove('open');
+            document.body.classList.remove('cl-prank-open');
+        }
+
+        window.addEventListener('load', function () {
+            document.addEventListener('click', (event) => {
+                if (event.target.classList.contains('cl-prank')) {
+                    closeGif();
+                }
             });
         });
 	</script>
@@ -113,59 +126,59 @@
 		</div>
    </header>
 
-	<!-- intro section -->
+   <!-- intro section -->
    <div id="particles-js" class="prevent-select">
-   		<section id="intro">
-		   	<div class="intro-content">
-		   		<div class="row">
-		   			<div class="col-twelve" style="margin-top: 0px;">
-			   			<h5 style="margin-top: 100px">Hello, World !!!</h5>
-			   			<h1>I'm Mohit Agrawal.</h1>
-			   			<p class="intro-position">
-			   				<h5 style="text-transform: none; font-weight: normal;">I am a
-							  <span
-							     class="txt-rotate"
-							     data-period="2000"
-							     data-rotate='["Entrepreneur enthusiast.","Full stack developer.","Tech enthusiast."]' 
-							     style="text-transform: uppercase; font-weight: bold;">
-							  </span>
-							</h5>
-			   			</p>
-			   			<a class="smoothscroll" href="#about">
-			   				<svg width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
-								<path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#fff;stroke-width:20px;"/>
-								<path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:#fff;stroke-width:20px;"/>
-							</svg>
-						</a>
-			   		</div>
-		   		</div>
-		   	</div>
-   		</section>
-	</div>
+       <section id="intro">
+           <div class="intro-content">
+               <div class="row">
+                   <div class="col-twelve" style="margin-top: 0px;">
+                       <h5 style="margin-top: 100px">Hello, World !!!</h5>
+                       <h1>I'm Mohit Agrawal.</h1>
+                       <p class="intro-position">
+                           <h5 style="text-transform: none; font-weight: normal;">I am a
+                               <span
+                               class="txt-rotate"
+                               data-period="2000"
+                               data-rotate='["Entrepreneur enthusiast.","Full stack developer.","Tech enthusiast."]' 
+                               style="text-transform: uppercase; font-weight: bold;">
+                            </span>
+                        </h5>
+                    </p>
+                    <a class="smoothscroll" href="#about">
+                        <svg width="40px" height="100%" viewBox="0 0 247 390" version="1.1" xmlns="https://www.w3.org/2000/svg" xmlns:xlink="https://www.w3.org/1999/xlink" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:1.5;">
+                            <path id="wheel" d="M123.359,79.775l0,72.843" style="fill:none;stroke:#fff;stroke-width:20px;"/>
+                            <path id="mouse" d="M236.717,123.359c0,-62.565 -50.794,-113.359 -113.358,-113.359c-62.565,0 -113.359,50.794 -113.359,113.359l0,143.237c0,62.565 50.794,113.359 113.359,113.359c62.564,0 113.358,-50.794 113.358,-113.359l0,-143.237Z" style="fill:none;stroke:#fff;stroke-width:20px;"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
 
-   <!-- about section -->
-   <section id="about">
-   		<div class="row section-intro">
-   			<div class="col-twelve">
-   				<h5>About me</h5>
-   				<div class="intro-info">
-   					<img src="images/author.png" alt="Profile Picture" style="margin-top: 30px;">
-   					<p class="lead">
-   					</br><strong>Hey there <span class="wave">👋</span></strong></br>I'm <b>Mohit Agrawal</b>, I am a Software Engineer, completed my bachelor's in information technology, currently working as a <b>Software Engineer</b> @ Capgemini India. As of now I have some projects on the <b>Web</b> and <b>Mobile</b> platform. My ambition is to make a valuable contribution towards software developer community and leave a message of <b>Perseverance</b> and <b>Tenacity</b>.</br></br><strong>Believer | Entrepreneur Enthusiast | Self-Learner</strong>
-					</p>
-   				</div>
-   			</div>
-   		</div>
-	</section>
+<!-- about section -->
+<section id="about">
+    <div class="row section-intro">
+        <div class="col-twelve">
+            <h5>About me</h5>
+            <div class="intro-info">
+                <img src="images/author.png" alt="Profile Picture" style="margin-top: 30px;">
+                <p class="lead">
+                </br><strong>Hey there <span class="wave">👋</span></strong></br>I'm <b>Mohit Agrawal</b>, I am a Software Engineer, completed my bachelor's in information technology, currently working as a <b>Software Engineer</b> @ Capgemini India. As of now I have some projects on the <b>Web</b> and <b>Mobile</b> platform. My ambition is to make a valuable contribution towards software developer community and leave a message of <b>Perseverance</b> and <b>Tenacity</b>.</br></br><strong>Believer | Entrepreneur Enthusiast | Self-Learner</strong>
+            </p>
+        </div>
+    </div>
+</div>
+</section>
 
-	<!-- email section -->
-	 <!-- TODO: click to copy button addtion beside mail text<a><i class="fa-solid fa-copy"></i></a> -->
-	<section id="email" style="background-color: #1E90FF;">
-		<div class="row email-timeline">
-			<div class="col-twelve email-header">
+<!-- email section -->
+<!-- TODO: click to copy button addtion beside mail text<a><i class="fa-solid fa-copy"></i></a> -->
+<section id="email">
+		<div>
+			<div class="email-header">
 				<h5>Let's connect and forge the future together 👨‍💻</h5>
 			</div>
-			<div class="col-twelve email-content">
+			<div class="email-content">
 				<a href="mailto:hey@mohitagrawal.xyz"><h1>hey@mohitagrawal.xyz</h1></a>
 			</div>
 		</div>
@@ -258,7 +271,7 @@
 							</ul>
 		   				</div>
 				        </div>
-					<p style="font-size: 40px;color: #1E90FF;padding-left: 10px">|</p>
+					<p style="font-size: 40px;color: #1E90FF;padding-left: 3px">|</p>
 					<div class="timeline-block">
 		   				<div class="timeline-ico">
 		   					<i class="fa fa-briefcase" style="color: #1E90FF;font-size: 3rem;"></i>
@@ -279,7 +292,7 @@
 							</ul>
 		   				</div>
 		   			</div>
-					<p style="font-size: 40px;color: #1E90FF;padding-left: 10px">|</p>
+					<p style="font-size: 40px;color: #1E90FF;padding-left: 3px">|</p>
 					<div class="timeline-block">
 		   				<div class="timeline-ico">
 		   					<i class="fa fa-briefcase" style="color: #1E90FF;font-size: 3rem;"></i>
@@ -299,7 +312,7 @@
 							</ul>
 		   				</div>
 		   			</div>
-	   				<p style="font-size: 40px;color: #1E90FF;padding-left: 10px">|</p>
+	   				<p style="font-size: 40px;color: #1E90FF;padding-left: 3px">|</p>
    					<div class="timeline-block">
 		   				<div class="timeline-ico">
 		   					<i class="fa fa-briefcase" style="color: #1E90FF;font-size: 3rem;"></i>
@@ -317,7 +330,7 @@
 							</ul>
 		   				</div>
 		   			</div>
-	   				<p style="font-size: 40px;color: #1E90FF;padding-left: 10px">|</p>
+	   				<p style="font-size: 40px;color: #1E90FF;padding-left: 3px">|</p>
 	   				<div class="timeline-block">
 	   					<div class="timeline-ico">
 	   						<i class="fa fa-briefcase" style="color: #1E90FF;font-size: 3rem;"></i>
@@ -353,7 +366,7 @@
 		   					<p>S. B. Jain Institute of Technology, Management & Research - Rashtrasant Tukadoji Maharaj Nagpur University, India | 6.7 CGPA</p>
 		   				</div>
 	   				</div>
-	   				<p style="font-size: 40px; color: #1E90FF;padding-left: 13px">|</p>
+	   				<p style="font-size: 40px; color: #1E90FF;padding-left: 5px">|</p>
 	   				<div class="timeline-block">
 		   				<div class="timeline-ico">
 		   					<i class="fa fa-graduation-cap" style="color: #1E90FF;font-size: 3rem;"></i>
@@ -363,7 +376,7 @@
 		   					<p>Baba Nanak Junior College - Maharashtra State Board, India | 6.3 CGPA</p>
 		   				</div>
 		   			</div>
-		   			<p style="font-size: 40px;color: #1E90FF;padding-left: 13px">|</p>
+		   			<p style="font-size: 40px;color: #1E90FF;padding-left: 5px">|</p>
 		   			<div class="timeline-block">
 		   				<div class="timeline-ico">
 		   					<i class="fa fa-graduation-cap" style="color: #1E90FF;font-size: 3rem;"></i>
@@ -515,6 +528,11 @@
     	<div id="loader"></div>
    </div>
 
+   <div id="prank" class="cl-prank">
+    <div class="cl-prank-body">
+      <img src="./images/prank.gif" />
+    </div>
+  </div>
    <!-- Java Scripts -->
    <script src="js/modernizr.js"></script>
    <script src="js/pace.min.js"></script>

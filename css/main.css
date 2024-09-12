@@ -1019,8 +1019,8 @@ header .logo {
 
 /*EMAIL SECTION*/
 #email {
-    padding-top: 4rem;
-    padding-bottom: 2rem;
+    background-color: #1e90ff;
+    padding: 8rem 0rem;
 }
 #email .email-header {
     text-align: center;
@@ -1029,17 +1029,15 @@ header .logo {
     color: #ffffff;
     font-size: 1.5rem;
     letter-spacing: 0.3rem;
+    margin: 0rem 4rem 4rem 4rem;
 }
 #email .email-content h1 {
+    margin: 0;
     text-align: center;
     font-size: calc(50% + 0.5vw + 0.5vh + 1vmin) / 1.5;
     letter-spacing: 0.3rem;
-    margin-bottom: 7rem;
     font-family: "Fira Code", sans-serif;
     font-weight: 600;
-}
-#email .email-content h2 {
-    text-align: center;
 }
 
 /*PROJECTS SECTION*/
@@ -1328,4 +1326,24 @@ a:active {
     font-weight: 700;
     font-size: 1.4rem;
     -webkit-transition: 0.4s;
+}
+
+.cl-prank {
+    display: none;
+    position: fixed;
+    inset: 0;
+    z-index: 10000;
+    background-color: rgba(0, 0, 0, 0.75);
+    padding: 40px;
+    overflow: auto;
+    align-items: center;
+    justify-content: center;
+}
+
+.cl-prank.open {
+    display: grid;
+}
+
+body.cl-prank-open {
+    overflow: hidden;
 }
