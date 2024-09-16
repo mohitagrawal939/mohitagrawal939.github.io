@@ -51,7 +51,7 @@
                     var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
                     var monthName=months[month];
                     if(day && year && month){
-                        var dataForm = `Last updated on : ${day} ${monthName}, ${year}`;
+                        var dataForm = `Last updated on - ${day} ${monthName}, ${year}`;
                         document.getElementById("updated-on").innerHTML = dataForm;
                     }
                 }).catch(function() {
