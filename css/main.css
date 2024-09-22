@@ -1029,31 +1029,55 @@ header .logo {
 #projects .section-intro p {
     color: #999999;
 }
-.services-content {
+.projects-content {
     max-width: 1200px;
 }
-.services-list {
+.projects-list {
     margin-top: 1.2rem;
     text-align: center;
 }
-.services-list .service {
+.projects-list .project {
     margin-bottom: 1.2rem;
     padding: 0 30px;
 }
-.services-list .icon {
+.projects-list h3 {
+    color: #1e90ff;
+}
+.projects-list .icon {
     display: inline-block;
     margin-bottom: 2.1rem;
 }
-.services-list .icon i {
+.projects-list .icon i {
     font-size: 6rem;
     color: #000000;
 }
-.services-list h3 {
-    color: #1e90ff;
-}
-.services-list .desc {
+.projects-list .desc {
     color: #000000;
+    margin-top: 1rem;
     font-family: "Fira Code", sans-serif;
+}
+.projects-content a {
+    animation-duration: 3000ms;
+    animation-name: blink;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    -webkit-animation: blink 3000ms infinite;
+}
+@keyframes blink {
+    from {
+        color: #fff;
+    }
+    to {
+        color: #1e90ff;
+    }
+}
+@-webkit-keyframes blink {
+    from {
+        color: #fff;
+    }
+    to {
+        color: #1e90ff;
+    }
 }
 .owl-pagination {
     text-align: center;
