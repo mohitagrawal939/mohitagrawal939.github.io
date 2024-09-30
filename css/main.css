@@ -1068,7 +1068,7 @@ header .logo {
         color: #fff;
     }
     to {
-        color: #1e90ff;
+        color: #047e0c;
     }
 }
 @-webkit-keyframes blink {
@@ -1076,7 +1076,7 @@ header .logo {
         color: #fff;
     }
     to {
-        color: #1e90ff;
+        color: #047e0c;
     }
 }
 .owl-pagination {
