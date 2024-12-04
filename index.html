@@ -51,7 +51,20 @@
                     var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
                     var monthName=months[month];
                     if(day && year && month){
-                        var dataForm = `Last updated on - ${day} ${monthName}, ${year}`;
+                        const nthNumber = (number) => {
+                            if (number > 3 && number < 21) return "th";
+                            switch (number % 10) {
+                                case 1:
+                                return "st";
+                                case 2:
+                                return "nd";
+                                case 3:
+                                return "rd";
+                                default:
+                                return "th";
+                            }
+                        };
+                        var dataForm = `Last updated on - ${monthName} ${day}${nthNumber(day)}, ${year}`;
                         document.getElementById("updated-on").innerHTML = dataForm;
                     }
                 }).catch(function() {
