@@ -991,29 +991,6 @@ header .logo {
     color: #ffffff;
 }
 
-/*EMAIL SECTION*/
-#email {
-    background-color: #1e90ff;
-    padding: 8rem 0rem;
-}
-#email .email-header {
-    text-align: center;
-}
-#email .email-header h5 {
-    color: #ffffff;
-    font-size: 1.5rem;
-    letter-spacing: 0.3rem;
-    margin: 0rem 4rem 4rem 4rem;
-}
-#email .email-content h1 {
-    margin: 0;
-    text-align: center;
-    font-size: calc(50% + 0.5vw + 0.5vh + 1vmin) / 1.5;
-    letter-spacing: 0.3rem;
-    font-family: "Fira Code", sans-serif;
-    font-weight: 600;
-}
-
 /*PROJECTS SECTION*/
 #projects {
     padding-top: 4rem;
@@ -1102,7 +1079,6 @@ header .logo {
 
 /*CONTACT*/
 #contact {
-    padding-top: 4rem;
     padding-bottom: 4rem;
     background: #151515;
 }
@@ -1111,31 +1087,19 @@ header .logo {
 }
 #contact .section-intro h5 {
     color: #1e90ff;
+    margin-bottom: 3rem;
 }
 #contact .section-intro p {
     color: rgba(255, 255, 255, 0.7);
 }
-.contact-info {
-    font-family: "Fira Code", sans-serif;
-    font-size: 1.5rem;
-    text-align: center;
-    margin-top: 3rem;
-}
-.contact-info .collapse {
-    padding: 0;
-}
-.contact-info .icon {
-    margin-bottom: 2.1rem;
-}
-.contact-info .icon i {
-    font-size: 3rem;
-    color: #ffffff;
-}
-.contact-info h5 {
+#contact .contact-email h2 {
+    margin: 30px;
     color: #1e90ff;
-}
-.contact-info a {
-    color: #fff;
+    text-align: center;
+    font-size: calc(50% + 0.5vw + 0.5vh + 1vmin) / 1.5;
+    letter-spacing: 0.3rem;
+    font-family: "Fira Code", sans-serif;
+    font-weight: 600;
 }
 
 /*FOOTER*/
