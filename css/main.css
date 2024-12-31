@@ -1084,6 +1084,7 @@ header .logo {
 }
 #contact .section-intro h1 {
     color: #ffffff;
+    margin-bottom: 3rem;
 }
 #contact .section-intro h5 {
     color: #1e90ff;
@@ -1091,6 +1092,7 @@ header .logo {
 }
 #contact .contact-email h2 {
     text-align: center;
+    margin-bottom: 3rem;
 }
 #contact .contact-email a {
     margin: 30px;
@@ -1100,6 +1102,26 @@ header .logo {
     letter-spacing: 0.3rem;
     font-family: "Fira Code", sans-serif;
     font-weight: 600;
+}
+#contact .social-buttons {
+    text-align: center;
+}
+#contact .social-buttons a {
+    color: #fff;
+    display: inline;
+    cursor: pointer;
+}
+#contact .social-buttons a:hover,
+.social-buttons a:focus {
+    color: #1e90ff;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #ffffff;
+}
+#contact .social-buttons a,
+.social-buttons a:visited {
+    color: #ffffff;
+    -webkit-text-stroke-width: inherit;
+    -webkit-text-stroke-color: inherit;
 }
 
 /*FOOTER*/
@@ -1125,32 +1147,11 @@ header .logo {
         transform: scale(0.9);
     }
 }
-#footer .bottom-container {
+#footer .copyright-container {
     color: #fff;
     line-height: 2rem;
     background-color: #2b2b2b;
     padding: 5px 10px;
-}
-#footer .social-buttons {
-    text-align: center;
-    padding-bottom: 15px;
-}
-#footer .social-buttons a {
-    color: #fff;
-    display: inline;
-    cursor: pointer;
-}
-#footer .social-buttons a:hover,
-.social-buttons a:focus {
-    color: #1e90ff;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #ffffff;
-}
-#footer .social-buttons a,
-.social-buttons a:visited {
-    color: #ffffff;
-    -webkit-text-stroke-width: inherit;
-    -webkit-text-stroke-color: inherit;
 }
 
 .wave {
