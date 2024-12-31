@@ -1320,3 +1320,27 @@ body.cl-prank-open {
     color: #1e90ff;
     font-size: 3rem;
 }
+
+.privacy-policy {
+    padding: 3rem 18rem;
+    font-family: "Fira Code", sans-serif;
+}
+
+@media only screen and (max-width: 1024px) {
+    .privacy-policy {
+        padding: 4rem 9rem;
+    }
+}
+
+.privacy-policy h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #1e90ff;
+}
+
+.privacy-policy b,
+a {
+    color: #1e90ff;
+}
