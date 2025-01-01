@@ -43,14 +43,17 @@
             (function (){
                 var urlGit = 'https://api.github.com/repos/mohitagrawal939/mohitagrawal939.github.io';
                 fetch(urlGit, { cache: 'no-cache' }).then(function(response) {
+                    if(response.status !== 200 || response.status !== '200'){
+                        throw Error("API call failed");
+                    }
                     return response.json();
                 }).then(function(data) {
                     var requestedData = data;
+                    if(requestedData?.pushed_at){
                     var  months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
                     var date = new Date(requestedData.pushed_at);
                     var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
                     var monthName=months[month];
-                    if(date){
                         const nthNumber = (number) => {
                             if (number > 3 && number < 21) return "th";
                             switch (number % 10) {
@@ -68,7 +71,7 @@
                         document.getElementById("updated-on").innerHTML = dataForm;
                     }
                 }).catch(function() {
-                    console.log("Booo");
+                    console.log("Ohh shit...");
                 });
             })();
         
