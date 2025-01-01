@@ -50,7 +50,7 @@
                     var date = new Date(requestedData.pushed_at);
                     var [month, day, year] = [date.getMonth(), date.getDate(), date.getFullYear()];
                     var monthName=months[month];
-                    if(day && year && month){
+                    if(date){
                         const nthNumber = (number) => {
                             if (number > 3 && number < 21) return "th";
                             switch (number % 10) {
