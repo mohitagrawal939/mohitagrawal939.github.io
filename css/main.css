@@ -1311,6 +1311,7 @@ body.cl-prank-open {
 }
 
 .pipe {
+    margin-top: 2rem;
     font-size: 40px;
     color: #1e90ff;
     padding-left: 3px;
