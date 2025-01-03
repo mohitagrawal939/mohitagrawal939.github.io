@@ -43,9 +43,6 @@
             (function (){
                 var urlGit = 'https://api.github.com/repos/mohitagrawal939/mohitagrawal939.github.io';
                 fetch(urlGit, { cache: 'no-cache' }).then(function(response) {
-                    if(response.status !== 200 || response.status !== '200'){
-                        throw Error("API call failed");
-                    }
                     return response.json();
                 }).then(function(data) {
                     var requestedData = data;
@@ -70,8 +67,14 @@
                         var dataForm = `Last updated on - ${monthName} ${day}${nthNumber(day)}, ${year} | `;
                         document.getElementById("updated-on").innerHTML = dataForm;
                     }
+                    else{
+                        console.log(
+                            "%cSeems you are accessing my website way frequently from same ISP 🤔",
+                            "color: #1E90FF; font-size: 16px; font-weight: bold; background-color: black; padding: 10px; border-radius: 10px; margin:5px"
+                        );
+                    }
                 }).catch(function() {
-                    console.log("Ohh shit...");
+                    console.log("Ohh error...");
                 });
             })();
         
