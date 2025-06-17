@@ -1,4 +1,4 @@
 User-agent: *
 Disallow: 
 Disallow: /cgi-bin/
-Sitemap: https://mohitagrawal.xyz/sitemap.xml
+Sitemap: https://mohitagrawal.com/sitemap.xml
