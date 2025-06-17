@@ -7,7 +7,8 @@ As you can see from the code the website is completely build with vanilaJS and w
 ### My current todo list is as follows:
 
 -   [ ] Blogs landing
--   [ ] Blogs individual pages
--   [ ] Shelf page
+-   [ ] Blog individual page
+-   [ ] Book shelf page
+-   [ ] Project detials page
 
 PS: I am open for suggestions for my todo's and also for something new apart from above items.
